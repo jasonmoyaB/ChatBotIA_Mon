@@ -2,19 +2,23 @@
 
 **Este documento responde a una sola pregunta: ¿puede comer esto o no?**
 
+Hay tres respuestas posibles: **prohibido**, **permitido**, y **solo si el
+oncólogo lo autoriza**. La tercera lista no es un permiso a medias:
+mientras no haya indicación escrita del equipo tratante, funciona como un no.
+
 Cómo se prepara, cuánto y cuándo está en
 `06_preparacion_y_rutina_de_comidas.md`. Qué comer ante un síntoma concreto está
 en `04_protocolos_por_sintoma.md`.
 
 > **Nota clínica.** Esta guía es un complemento de las indicaciones del oncólogo,
-> el cirujano y el nutricionista clínico tratantes. En una paciente operada de
+> el cirujano y el equipo tratante. En una paciente operada de
 > cáncer gástrico y bajo quimioterapia, la tolerancia digestiva, el tipo de
 > cirugía, el estado nutricional y los resultados de laboratorio pueden obligar a
 > modificaciones individuales que solo ellos indican.
 
 Cualquier cambio importante en la dieta, y **cualquier suplemento, vitamina,
-producto natural o bebida nutricional**, debe revisarse antes con el oncólogo o
-el nutricionista clínico. No se decide en casa.
+producto natural o bebida nutricional**, debe revisarse antes con el oncólogo.
+No se decide en casa.
 
 ---
 
@@ -94,6 +98,27 @@ tolerado.
 - Pasta corta.
 - Pan blanco tostado.
 
+### Legumbres
+
+- **Garbanzos bien cocidos, blandos.**
+- **Lentejas bien cocidas, blandas.**
+
+Son las dos únicas legumbres confirmadas. Ella las ha comido muchas veces y le
+sientan bien: la tolerancia está comprobada en la práctica, no supuesta. El
+resto de legumbres sigue en la lista de "solo con autorización médica".
+
+Cómo se las dan:
+
+- Muy bien cocidas, blandas, sin caldo graso.
+- Machacadas, en puré o pasadas por pasapurés si aparece gas, distensión o
+  llenura.
+- Porción pequeña, dentro de una de las comidas del día.
+- Nunca con chorizo, embutido, tocino ni sofrito graso: eso está prohibido más
+  arriba y no deja de estarlo por acompañar a una legumbre.
+
+Si alguna vez le caen mal, se anota en `08_tolerancias_y_preferencias.md` y el
+asistente deja de proponerlas.
+
 ### Otros
 
 - Caldos magros clarificados.
@@ -106,11 +131,68 @@ tolerado.
 
 ---
 
-## LO QUE NO ESTÁ EN NINGUNA DE LAS DOS LISTAS
+## SOLO CON AUTORIZACIÓN MÉDICA
 
-Si la cuidadora pregunta por un alimento que no aparece ni entre los prohibidos
-ni entre los permitidos, el asistente **no decide**.
+Alimentos que **no están prohibidos de forma absoluta**, pero que en una paciente
+gastrectomizada y bajo quimioterapia dependen de la fase postoperatoria y de su
+tolerancia real. **El asistente no los aprueba.** Mientras no exista indicación
+del oncólogo o del equipo tratante, la respuesta es que todavía no.
+
+### Legumbres distintas del garbanzo y la lenteja (frijoles, alubias, arvejas, habas)
+
+**Respuesta por defecto: todavía no. Hay que preguntárselo al oncólogo.**
+
+Garbanzos y lentejas son la excepción: están permitidos, con la preparación
+descrita arriba. Que ella los tolere **no autoriza** las demás legumbres.
+
+Por qué no se decide en casa:
+
+- Son ricas en fibra insoluble y en oligosacáridos que se fermentan en el
+  intestino. Producen gas y distensión, y eso en un estómago remanente o sobre
+  una anastomosis se tolera mal.
+- Los alimentos flatulentos y muy fibrosos son de los que más se restringen en
+  las primeras fases tras una gastrectomía.
+- El gas y la distensión pueden confundirse con síntomas de vaciamiento rápido
+  (síndrome de dumping) o empeorarlos.
+
+Por qué tampoco se prohíben para siempre:
+
+- Las guías de gastrectomía no las eliminan de la dieta: las **retrasan** y las
+  **modifican de textura**. Pasado un tiempo se reintroducen poco a poco, según
+  tolerancia.
+- Cuando el equipo tratante las autoriza, la forma habitual es **trituradas y
+  pasadas por pasapurés o colador**, sin piel, en puré o crema, en cantidad
+  pequeña y con el resto de la comida. Nunca enteras, ni con caldo graso, ni con
+  embutido o chorizo (eso además cae en la lista de prohibidos).
+- El puré de legumbre se cita entre los alimentos útiles para prevenir el
+  vaciamiento rápido, precisamente por su fibra soluble.
+
+Lo que la cuidadora debe preguntar al oncólogo, en concreto:
+
+1. ¿Ya está en fase de reintroducir legumbres?
+2. Si sí: ¿en qué textura, qué cantidad y cuántas veces por semana?
+3. ¿Hay que retirarlas los días de quimioterapia o si aparece diarrea, gas o
+   distensión?
+
+Si el oncólogo la autoriza, se prueba **una vez, en cantidad muy pequeña**,
+y el resultado se anota en `08_tolerancias_y_preferencias.md`. Si le cae mal, ahí
+queda registrado y el asistente deja de proponerla.
+
+### El resto de esta lista
+
+- Legumbres distintas del garbanzo y la lenteja, incluso trituradas.
+- Verduras flatulentas o muy fibrosas: brócoli, coliflor, repollo, alcachofa,
+  espárrago, puerro.
+- Cereales integrales y salvado.
+
+---
+
+## LO QUE NO ESTÁ EN NINGUNA DE LAS TRES LISTAS
+
+Si la cuidadora pregunta por un alimento que no aparece entre los prohibidos, ni
+entre los permitidos, ni entre los que dependen de autorización, el asistente
+**no decide**.
 
 No lo clasifica por parecido ("es como el pollo"), no lo aprueba por ser "suave",
 no lo prohíbe por ser "pesado". Responde que no está en la lista y que hay que
-consultarlo con el nutricionista clínico o el oncólogo.
+consultarlo con el oncólogo o el equipo tratante.
