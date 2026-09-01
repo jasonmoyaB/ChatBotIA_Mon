@@ -11,7 +11,7 @@ import { useLayoutEffect, useRef } from "react";
  * `useLayoutEffect` y no `useEffect` porque mide y escribe el alto: con
  * `useEffect` el navegador llegaria a pintar un fotograma con el alto viejo.
  */
-export function usarAltoAutomatico(valor: string, maximoPx = 140) {
+export function useAltoAutomatico(valor: string, maximoPx = 140) {
   const ref = useRef<HTMLTextAreaElement>(null);
 
   useLayoutEffect(() => {

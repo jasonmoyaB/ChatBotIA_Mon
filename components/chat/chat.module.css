@@ -41,6 +41,23 @@
 .cabecera p { margin: 2px 0 0; color: var(--suave); font-size: 13px; line-height: 1.35; }
 .privacidad { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
 .privacidad span { width: 7px; height: 7px; background: #4f8467; border-radius: 50%; animation: respirar 2.4s ease-in-out infinite; }
+.accionesCabecera { display: flex; align-items: center; gap: 16px; }
+.nuevaConversacion {
+  min-height: 38px;
+  padding: 0 14px;
+  color: var(--acento-profundo);
+  font-size: 13px;
+  font-weight: 630;
+  background: #fff;
+  border: 1px solid var(--borde);
+  border-radius: 11px;
+  cursor: pointer;
+  transition: background 180ms ease, transform 180ms ease;
+}
+.nuevaConversacion:hover:not(:disabled) { background: var(--mia); transform: translateY(-1px); }
+.nuevaConversacion:active:not(:disabled) { transform: scale(0.98); }
+.nuevaConversacion:focus-visible { outline: 3px solid rgb(40 93 69 / 20%); outline-offset: 2px; }
+.nuevaConversacion:disabled { cursor: default; opacity: 0.45; }
 
 .conversacion {
   display: flex;
@@ -107,7 +124,9 @@
   .cabecera { padding: 14px 16px; }
   .cabecera h1 { font-size: 17px; }
   .cabecera div p { display: none; }
-  .privacidad { font-size: 12px !important; }
+  .privacidad { display: none; }
+  .accionesCabecera { gap: 0; }
+  .nuevaConversacion { padding-inline: 11px; }
   .conversacion { gap: 18px; padding: 24px 16px 20px; }
   .burbuja { width: min(88%, 610px); }
   .contenido { padding: 13px 15px; font-size: 17px; }
@@ -117,5 +136,5 @@
 
 @media (prefers-reduced-motion: reduce) {
   .privacidad span, .escribiendo span { animation: none; }
-  .boton { transition: none; }
+  .boton, .nuevaConversacion { transition: none; }
 }

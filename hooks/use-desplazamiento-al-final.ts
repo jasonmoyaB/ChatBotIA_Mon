@@ -7,7 +7,7 @@ import { useEffect, useRef } from "react";
  *
  * Es lo que hace que la conversacion siga al texto mientras va llegando.
  */
-export function usarDesplazamientoAlFinal<T extends HTMLElement>(
+export function useDesplazamientoAlFinal<T extends HTMLElement>(
   dependencia: unknown,
 ) {
   const ref = useRef<T>(null);

@@ -25,8 +25,11 @@ const ESPERADOS = [
   "01_protocolo_emergencias.md",
   "02_medicamentos_no_autorizados.md",
   "03_medicamentos_autorizados.md",
-  "04_mapa_sintomas_medicamentos.md",
-  "05_reglas_alimentacion.md",
+  "04_protocolos_por_sintoma.md",
+  "05_alimentos_permitidos_y_prohibidos.md",
+  "06_preparacion_y_rutina_de_comidas.md",
+  "07_indicaciones_dias_de_tratamiento.md",
+  "08_tolerancias_y_preferencias.md",
 ];
 
 function leerDocumentos(): string[] {

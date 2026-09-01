@@ -9,7 +9,7 @@ import { useEffect, useRef, type RefObject } from "react";
  * quita el foco. Sin esto, la cuidadora tendria que volver a tocar el campo
  * despues de cada mensaje.
  */
-export function usarFocoAlLiberar(
+export function useFocoAlLiberar(
   ref: RefObject<HTMLElement | null>,
   ocupado: boolean,
 ): void {

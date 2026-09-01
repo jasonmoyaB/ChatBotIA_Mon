@@ -1,0 +1,67 @@
+.dialogo {
+  width: min(440px, calc(100% - 32px));
+  padding: 0;
+  color: var(--texto);
+  background: transparent;
+  border: 0;
+  border-radius: 22px;
+  box-shadow: 0 30px 90px rgb(29 38 32 / 24%);
+}
+
+.dialogo::backdrop {
+  background: rgb(28 35 31 / 42%);
+  backdrop-filter: blur(5px);
+}
+
+.contenido {
+  padding: 28px;
+  background: var(--superficie);
+  border: 1px solid rgb(255 255 255 / 72%);
+  border-radius: 22px;
+  box-shadow: inset 0 1px #fff;
+}
+
+.titulo {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+
+.descripcion {
+  margin: 8px 0 24px;
+  color: var(--suave);
+  font-size: 15px;
+}
+
+.acciones {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 10px;
+}
+
+.acciones button {
+  min-height: 48px;
+  padding: 0 16px;
+  font-weight: 620;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.acciones button:active { transform: scale(0.98); }
+.acciones button:focus-visible { outline: 3px solid rgb(40 93 69 / 22%); outline-offset: 2px; }
+.cancelar { color: var(--texto); background: transparent; border: 1px solid var(--borde); }
+.cancelar:hover { background: #efeee9; }
+.confirmar { color: #fff; background: var(--alarma); border: 1px solid var(--alarma); }
+.confirmar:hover { background: #742b2b; }
+
+@media (max-width: 480px) {
+  .contenido { padding: 24px 20px 20px; }
+  .acciones { grid-template-columns: 1fr; }
+  .confirmar { grid-row: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .acciones button { transition: none; }
+}

@@ -1,7 +1,8 @@
 "use client";
 
-import { usarDesplazamientoAlFinal } from "@/hooks/usar-desplazamiento-al-final";
-import { usarAnimacionDeTurnos } from "@/hooks/usar-animacion-de-turnos";
+import { useDesplazamientoAlFinal } from "@/hooks/use-desplazamiento-al-final";
+import { useAnimacionDeTurnos } from "@/hooks/use-animacion-de-turnos";
+import type { TurnoVisible } from "@/hooks/use-turnos";
 import { SALUDO } from "@/lib/mensajes";
 import type { Turno } from "@/lib/tipos";
 
@@ -9,7 +10,7 @@ import { Burbuja } from "./burbuja";
 import estilos from "./chat.module.css";
 
 interface Props {
-  turnos: Turno[];
+  turnos: TurnoVisible[];
   enCurso: boolean;
 }
 
@@ -17,8 +18,8 @@ interface Props {
 const BURBUJA_SALUDO: Turno = { role: "assistant", content: SALUDO };
 
 export function Conversacion({ turnos, enCurso }: Props) {
-  const contenedor = usarDesplazamientoAlFinal<HTMLDivElement>(turnos);
-  usarAnimacionDeTurnos(contenedor, turnos.length);
+  const contenedor = useDesplazamientoAlFinal<HTMLDivElement>(turnos);
+  useAnimacionDeTurnos(contenedor, turnos.length);
   const ultimo = turnos.length - 1;
 
   return (
@@ -33,7 +34,7 @@ export function Conversacion({ turnos, enCurso }: Props) {
 
       {turnos.map((turno, i) => (
         <Burbuja
-          key={`${i}-${turno.role}`}
+          key={turno.id}
           turno={turno}
           esperando={enCurso && i === ultimo && !turno.content}
         />

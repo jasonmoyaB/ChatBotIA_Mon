@@ -2,8 +2,8 @@
 
 import type { KeyboardEvent } from "react";
 
-import { usarAltoAutomatico } from "@/hooks/usar-alto-automatico";
-import { usarFocoAlLiberar } from "@/hooks/usar-foco-al-liberar";
+import { useAltoAutomatico } from "@/hooks/use-alto-automatico";
+import { useFocoAlLiberar } from "@/hooks/use-foco-al-liberar";
 
 import estilos from "./chat.module.css";
 
@@ -26,8 +26,8 @@ function atajoDeEnvio(alEnviar: () => void) {
 
 /** El textarea: crece con el texto y recupera el foco al quedar libre. */
 export function Campo({ valor, ocupado, alEscribir, alEnviar }: Props) {
-  const entrada = usarAltoAutomatico(valor);
-  usarFocoAlLiberar(entrada, ocupado);
+  const entrada = useAltoAutomatico(valor);
+  useFocoAlLiberar(entrada, ocupado);
 
   return (
     <>

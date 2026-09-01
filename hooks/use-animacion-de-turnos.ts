@@ -6,7 +6,7 @@ import type { RefObject } from "react";
 
 gsap.registerPlugin(useGSAP);
 
-export function usarAnimacionDeTurnos(
+export function useAnimacionDeTurnos(
   contenedor: RefObject<HTMLElement | null>,
   cantidad: number,
 ): void {

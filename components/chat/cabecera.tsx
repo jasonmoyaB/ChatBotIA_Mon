@@ -1,6 +1,11 @@
 import estilos from "./chat.module.css";
 
-export function Cabecera() {
+interface Props {
+  alNuevaConversacion: () => void;
+  deshabilitada: boolean;
+}
+
+export function Cabecera({ alNuevaConversacion, deshabilitada }: Props) {
   return (
     <header className={estilos.cabecera}>
       <div className={estilos.identidad}>
@@ -10,10 +15,20 @@ export function Cabecera() {
           <p>Indicaciones médicas, explicadas con claridad</p>
         </div>
       </div>
-      <p className={estilos.privacidad}>
-        <span aria-hidden="true" />
-        Sesión privada
-      </p>
+      <div className={estilos.accionesCabecera}>
+        <p className={estilos.privacidad}>
+          <span aria-hidden="true" />
+          Sesión privada
+        </p>
+        <button
+          type="button"
+          className={estilos.nuevaConversacion}
+          onClick={alNuevaConversacion}
+          disabled={deshabilitada}
+        >
+          Nueva conversación
+        </button>
+      </div>
     </header>
   );
 }

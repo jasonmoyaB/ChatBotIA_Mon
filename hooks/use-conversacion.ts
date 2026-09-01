@@ -2,27 +2,27 @@
 
 import { useCallback, useState } from "react";
 
-import type { Turno } from "@/lib/tipos";
 import { enviarMensaje } from "@/services/chat";
 
-import { usarTurnos } from "./usar-turnos";
+import { useTurnos, type TurnoVisible } from "./use-turnos";
 
 export interface Conversacion {
-  turnos: Turno[];
+  turnos: TurnoVisible[];
   enCurso: boolean;
   borrador: string;
   escribir: (texto: string) => void;
   enviar: () => void;
+  reiniciar: () => void;
 }
 
 /**
  * El borrador, el estado del envio y la orquestacion.
  *
  * No conoce `fetch`, ni URLs, ni codigos de estado: eso vive en
- * `services/chat.ts`. La lista de turnos la lleva `usarTurnos`.
+ * `services/chat.ts`. La lista de turnos la lleva `useTurnos`.
  */
-export function usarConversacion(): Conversacion {
-  const { turnos, abrirIntercambio, reemplazarRespuesta } = usarTurnos();
+export function useConversacion(): Conversacion {
+  const { turnos, abrirIntercambio, reemplazarRespuesta, borrarTurnos } = useTurnos();
   const [enCurso, setEnCurso] = useState(false);
   const [borrador, setBorrador] = useState("");
 
@@ -32,7 +32,7 @@ export function usarConversacion(): Conversacion {
 
     // El historial que se manda es el de ANTES de este mensaje: el mensaje nuevo
     // viaja aparte, en `mensaje`.
-    const historial = turnos;
+    const historial = turnos.map(({ role, content }) => ({ role, content }));
 
     setBorrador("");
     setEnCurso(true);
@@ -42,5 +42,11 @@ export function usarConversacion(): Conversacion {
       .finally(() => setEnCurso(false));
   }, [borrador, enCurso, turnos, abrirIntercambio, reemplazarRespuesta]);
 
-  return { turnos, enCurso, borrador, escribir: setBorrador, enviar };
+  const reiniciar = useCallback(() => {
+    if (enCurso) return;
+    setBorrador("");
+    borrarTurnos();
+  }, [borrarTurnos, enCurso]);
+
+  return { turnos, enCurso, borrador, escribir: setBorrador, enviar, reiniciar };
 }

@@ -1,15 +1,20 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 
 import type { Turno } from "@/lib/tipos";
 
+export interface TurnoVisible extends Turno {
+  id: number;
+}
+
 export interface Turnos {
-  turnos: Turno[];
+  turnos: TurnoVisible[];
   /** Añade el turno de la cuidadora y abre el del bot, todavia vacio. */
   abrirIntercambio: (mensaje: string) => void;
   /** Reescribe el turno del bot con el texto acumulado hasta ahora. */
   reemplazarRespuesta: (contenido: string) => void;
+  borrarTurnos: () => void;
 }
 
 /**
@@ -19,24 +24,33 @@ export interface Turnos {
  * aparece dentro de la burbuja que ya esta en pantalla, en vez de saltar al
  * final cuando termina.
  */
-export function usarTurnos(): Turnos {
-  const [turnos, setTurnos] = useState<Turno[]>([]);
-
+export function useTurnos(): Turnos {
+  const [turnos, setTurnos] = useState<TurnoVisible[]>([]);
+  const siguienteId = useRef(0);
   const abrirIntercambio = useCallback((mensaje: string) => {
+    const idUsuario = siguienteId.current++;
+    const idAsistente = siguienteId.current++;
     setTurnos((previos) => [
       ...previos,
-      { role: "user", content: mensaje },
-      { role: "assistant", content: "" },
+      { id: idUsuario, role: "user", content: mensaje },
+      { id: idAsistente, role: "assistant", content: "" },
     ]);
   }, []);
 
   const reemplazarRespuesta = useCallback((contenido: string) => {
     setTurnos((previos) => {
       const copia = [...previos];
-      copia[copia.length - 1] = { role: "assistant", content: contenido };
+      const ultimo = copia.at(-1);
+      if (!ultimo) return previos;
+      copia[copia.length - 1] = { ...ultimo, content: contenido };
       return copia;
     });
   }, []);
 
-  return { turnos, abrirIntercambio, reemplazarRespuesta };
+  const borrarTurnos = useCallback(() => {
+    siguienteId.current = 0;
+    setTurnos([]);
+  }, []);
+
+  return { turnos, abrirIntercambio, reemplazarRespuesta, borrarTurnos };
 }
