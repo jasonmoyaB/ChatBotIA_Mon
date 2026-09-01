@@ -9,6 +9,7 @@ import {
 } from "@/lib/auth";
 import { secretosDePuertaQueFaltan } from "@/lib/configuracion";
 import { NO_AUTORIZADO } from "@/lib/mensajes";
+import { PAGINA_NO_DISPONIBLE } from "@/lib/pagina-no-disponible";
 import { registrar } from "@/lib/registro";
 
 function redirigirSinToken(peticion: NextRequest): NextResponse {
@@ -89,14 +90,6 @@ export async function proxy(peticion: NextRequest) {
 
   return rechazar(esApi);
 }
-
-const PAGINA_NO_DISPONIBLE = `<!doctype html>
-<html lang="es"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow"><title>No disponible</title>
-<style>body{margin:0;min-height:100vh;display:grid;place-items:center;
-background:#fbf9f6;color:#5c6660;font:400 20px/1.6 system-ui,sans-serif}</style>
-</head><body><p>No disponible.</p></body></html>`;
 
 export const config = {
   // Todo menos los estaticos de Next y los iconos: el manifest y los iconos de

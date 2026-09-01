@@ -97,7 +97,41 @@ async function cierraSiFaltaConfiguracion(): Promise<void> {
   );
 }
 
+/**
+ * Regresion: la pagina de rechazo decia solo "No disponible". Quien la veia no
+ * podia distinguir "me falta el token en la URL" de "el servidor esta roto", y
+ * la unica de las dos que puede arreglar sola es la primera.
+ */
+async function elRechazoDiceQueHacer(): Promise<void> {
+  seccion("Proxy: la pagina de rechazo es accionable");
+
+  await conEntorno(
+    { CLAVE_ACCESO: "clave-de-pruebas", SECRETO_COOKIE: SECRETO_DE_PRUEBAS },
+    async () => {
+      const respuesta = await proxy(new NextRequest("https://ejemplo.test/"));
+      const cuerpo = await respuesta.text();
+
+      comprobar("responde 401", respuesta.status === 401);
+      comprobar(
+        "dice que hace falta el enlace completo",
+        cuerpo.includes("enlace completo"),
+      );
+      comprobar(
+        "no filtra el nombre del parametro ni la clave",
+        !cuerpo.includes("?k=") && !cuerpo.includes("clave-de-pruebas"),
+      );
+
+      const api = await proxy(new NextRequest("https://ejemplo.test/api/chat"));
+      comprobar(
+        "la API sigue respondiendo texto plano, no la pagina",
+        (await api.text()) === "No autorizado.",
+      );
+    },
+  );
+}
+
 export async function pruebasDelProxy(): Promise<void> {
   await limpiaElTokenDeLaUrl();
   await cierraSiFaltaConfiguracion();
+  await elRechazoDiceQueHacer();
 }
