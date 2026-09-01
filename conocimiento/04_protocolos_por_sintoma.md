@@ -186,25 +186,47 @@ otro antiemético.
 
 ---
 
-## DOLOR TIPO CÓLICO O ESPASMO
+## DOLOR
 
-**1. Descartar alarma.** Dolor en el pecho → `01`, urgencias.
+**1. Descartar alarma.** Dolor en el pecho → `01`, urgencias. Dolor importante al
+comer → `01`, contactar al equipo médico.
 
 **2. Medicamento.**
 
 | Situación | Medicamento | Referencia |
 |---|---|---|
 | Dolor tipo cólico o espasmo (digestivo, urinario, ginecológico) | Sertal Compuesto | `03` → Medicamento 6 |
+| Dolor moderado a intenso, según indicación médica | Tramal / Tramadol en gotas | `03` → Medicamento 12 |
+| Dolor leve o fiebre | ⚠️ **BLOQUEADO** — ver el conflicto de abajo | `03` → Medicamento 1 |
 
 - **Sertal Compuesto:** dosis y frecuencia *"No indicadas"*. Su composición varía
   según el país y la presentación. Antes de dar cualquier detalle hay que pedir
   ver el envase o los principios activos.
+- **Tramal:** **10 gotas**, por vía oral. Frecuencia *"No indicada"*: solo la que
+  le indicó el médico. **La concentración por gota no está escrita** y varía
+  según la presentación: hay que verificar en el frasco cuántos miligramos son
+  esas 10 gotas.
 
 **3. Apoyo.** Comidas pequeñas y suaves, sin irritantes (`05`, `06`).
 
-**4. Cuándo escalar.** Dolor persistente, o dolor importante al comer.
+**4. Cuándo escalar.**
 
-**5. Nunca.** No dar dosis de Sertal sin ver el envase.
+- Dolor persistente, o dolor importante al comer.
+- Tramal: somnolencia, mareo, náuseas, estreñimiento o reflejos disminuidos.
+- Si necesita Tramal cada vez más seguido, o si lleva mucho tiempo tomándolo:
+  puede generar dependencia. Se consulta con el médico.
+
+**5. Nunca.**
+
+- No dar dosis de Sertal sin ver el envase.
+- **Tramal nunca con alcohol** ni con otros medicamentos sedantes sin indicación
+  médica. Ver los riesgos cruzados más abajo.
+- **Nunca repetir la dosis de Tramal porque "no le hizo efecto".** La frecuencia
+  no está escrita: se pregunta al médico, no se estima.
+- **Tramal no es para la fiebre.** Es un analgésico. La fiebre de 38 °C o más es
+  urgencia (`01`), no algo que se trate en casa.
+- **Nunca suspenderlo bruscamente** tras uso continuo, ni cambiar la dosis por
+  cuenta propia.
 
 ### ⚠️ Dolor general: Paracetamol / Acetaminofén — CONFLICTO SIN RESOLVER
 
@@ -220,8 +242,8 @@ Además, todos los campos del Medicamento 1 en `03` son plantilla de ejemplo
 reales** y no deben usarse nunca, ni aunque se resolviera el conflicto.
 
 Consecuencia práctica: **hoy no hay nada autorizado para la fiebre ni para el
-dolor general.** Y la fiebre de 38 °C o más es urgencia, no algo que se baje en
-casa.
+dolor leve.** Para el dolor moderado a intenso sí lo hay: Tramal (Medicamento 12).
+Y la fiebre de 38 °C o más es urgencia, no algo que se baje en casa.
 
 ---
 
@@ -385,14 +407,28 @@ Todos salen de las notas médicas de `03_medicamentos_autorizados.md`.
 
 | Riesgo | Medicamentos implicados |
 |---|---|
-| Somnolencia acumulada | Difenhidramina (2) + Metoclopramida (3) + Alprazolam (11) |
+| Somnolencia y reflejos disminuidos, acumulados | Difenhidramina (2) + Metoclopramida (3) + Alprazolam (11) + **Tramal (12)** |
+| Sedantes que no deben combinarse sin indicación médica | **Tramal (12)** con Difenhidramina (2) o Alprazolam (11) |
 | Ritmo cardíaco / intervalo QT | Ondansetrón (5) + Domperidona (9) |
 | Antieméticos duplicados | Metoclopramida (3), Ondansetrón (5), Domperidona (9) |
+| Náusea causada por el propio fármaco | **Tramal (12)** — puede provocar la náusea que luego se trata con 3, 5 o 9 |
+| Estreñimiento sin nada autorizado | **Tramal (12)** lo causa, y no hay ningún medicamento autorizado para tratarlo |
 | Prohibición absoluta | Ondansetrón (5) **nunca** junto con apomorfina |
-| Alcohol | Difenhidramina (2), Alprazolam (11) — ya prohibido en `05` |
+| Dependencia con uso prolongado | Alprazolam (11), **Tramal (12)** |
+| Alcohol | Difenhidramina (2), Alprazolam (11), **Tramal (12)** — ya prohibido en `05` |
 | Ajuste por función renal | Famotidina (7), Enalapril (10), Domperidona (9) |
 | Función hepática | Domperidona (9) |
-| No suspender por cuenta propia | Enalapril (10), Alprazolam (11) |
+| No suspender por cuenta propia | Enalapril (10), Alprazolam (11), **Tramal (12)** |
+
+**Riesgo de somnolencia con Tramal.** La nota médica del Medicamento 12 dice que
+no debe combinarse con otros medicamentos sedantes sin indicación médica.
+Difenhidramina (2) y Alprazolam (11) son sedantes, y Metoclopramida (3) también
+puede causar somnolencia. Si la cuidadora pregunta por darle Tramal el mismo día
+que alguno de ellos, hay que decírselo y que lo confirme con el médico.
+
+**Estreñimiento por Tramal.** Está escrito como efecto en la nota del
+Medicamento 12, y `03` no autoriza nada para tratarlo. Si aparece, se comunica al
+médico. El asistente no sugiere ningún laxante.
 
 ---
 
@@ -401,17 +437,25 @@ Todos salen de las notas médicas de `03_medicamentos_autorizados.md`.
 Mientras sigan abiertos, el asistente debe decirlo cuando venga al caso, en vez
 de rellenarlos.
 
-1. Resolver el conflicto Paracetamol / Acetaminofén entre `02` y `03`. Mientras
-   tanto no hay nada autorizado para fiebre ni dolor general.
-2. Confirmar con el oncólogo el umbral de fiebre. `01` usa **38 °C o más**, el
+1. **Preguntar al médico cada cuánto puede tomar las 10 gotas de Tramal**, y
+   cuántos miligramos son en el frasco que ella tiene. Es un analgésico opioide
+   con la frecuencia *"No indicada"*: es el hueco más peligroso del corpus.
+2. **Preguntar al médico si Tramal puede darse el mismo día que Tafil,
+   Difenhidramina o Metoclopramida**, y si puede combinarse con los antieméticos
+   autorizados (Metoclopramida, Ondansetrón, Domperidona).
+3. Resolver el conflicto Paracetamol / Acetaminofén entre `02` y `03`. Mientras
+   tanto no hay nada autorizado para fiebre ni dolor leve. Al resolverlo hay que
+   confirmar también qué contiene exactamente el Tylex 750, porque en algunos
+   países lleva un segundo principio activo además del paracetamol.
+4. Confirmar con el oncólogo el umbral de fiebre. `01` usa **38 °C o más**, el
    criterio más protector de los dos que había escritos.
-3. Rellenar nombre y teléfono del médico tratante y del hospital en `01`.
-4. Completar dosis y frecuencia reales de: Tylex 750 (1), Enzypride (4),
+5. Rellenar nombre y teléfono del médico tratante y del hospital en `01`.
+6. Completar dosis y frecuencia reales de: Tylex 750 (1), Enzypride (4),
    Ondansetrón (5), Sertal Compuesto (6), Famotidina (7), Solugastril (8),
-   Enalapril (10), Tafil (11).
-5. Sustituir los valores de ejemplo del Medicamento 1 de `03` por datos reales.
-6. Corregir la línea de `02_medicamentos_no_autorizados.md` que dice
+   Enalapril (10), Tafil (11), Tramal (12).
+7. Sustituir los valores de ejemplo del Medicamento 1 de `03` por datos reales.
+8. Corregir la línea de `02_medicamentos_no_autorizados.md` que dice
    *"Si el usuario pregunta por un medicamento NO listado aquí…"*: está copiada
    del documento de autorizados y su lógica queda invertida.
-7. Completar `07_indicaciones_dias_de_tratamiento.md`.
-8. Completar `08_tolerancias_y_preferencias.md`.
+9. Completar `07_indicaciones_dias_de_tratamiento.md`.
+10. Completar `08_tolerancias_y_preferencias.md`.

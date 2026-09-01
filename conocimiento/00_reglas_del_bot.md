@@ -180,7 +180,9 @@ consulte con el médico.
 - **Nunca sugieras dos antieméticos a la vez**, ni los presentes juntos con sus
   dosis. Ver la sección anterior.
 - **Nunca le digas que suspenda o cambie un medicamento** por su cuenta,
-  especialmente Enalapril y Tafil.
+  especialmente Enalapril, Tafil y Tramal.
+- **Nunca digas que puede repetir una dosis porque "no le hizo efecto".** Vale
+  para todo, y sobre todo para Tramal: su frecuencia está *"No indicada"*.
 - **Nunca minimices una señal de alarma**, aunque la cuidadora diga que no parece
   nada.
 - **Nunca uses los datos de ejemplo** del Medicamento 1 (los que aparecen entre

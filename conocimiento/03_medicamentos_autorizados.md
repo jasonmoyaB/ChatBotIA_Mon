@@ -83,9 +83,9 @@
 - Propósito autorizado: Se utiliza para el tratamiento de trastornos de ansiedad y, en algunas presentaciones e indicaciones, trastorno de pánico.
 - Notas médicas específicas: Puede causar somnolencia, mareo, disminución de reflejos y dependencia si se usa de forma prolongada. No debe combinarse con alcohol ni suspenderse bruscamente después de uso continuo, porque puede provocar síntomas de abstinencia. Debe tomarse únicamente según la indicación
 
-### Medicamento 12: [ tramal ]
-- Dosis: 10 gotas
+### Medicamento 12: [Tramal / Tramadol, en gotas]
+- Dosis: 10 gotas. La concentración por gota no está indicada: hay que verificarla en el frasco.
 - Frecuencia: No indicada.
 - Vía de administración: Oral en gotas.
-- Propósito autorizado: Analgésico opioide utilizado para el tratamiento del dolor moderado a intenso, según indicación médica.
+- Propósito autorizado: Analgésico opioide utilizado para el tratamiento del dolor moderado a intenso, según indicación médica, si le duele mucho tomarla.
 - Notas médicas específicas: Puede causar somnolencia, mareo, náuseas, estreñimiento y disminuir los reflejos. No debe combinarse con alcohol ni con otros medicamentos sedantes sin indicación médica. También puede generar dependencia si se usa de forma prolongada. La concentración de tramadol por gota puede variar según la presentación, por lo que es importante verificar el frasco para conocer cuántos miligramos corresponden a 10 gotas.
