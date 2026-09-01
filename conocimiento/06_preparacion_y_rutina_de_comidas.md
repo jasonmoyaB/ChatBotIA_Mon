@@ -45,6 +45,29 @@ Métodos que no se usan:
 
 ---
 
+## LA PORCIÓN PEQUEÑA ES LA REGLA QUE MÁS PESA
+
+**Comprobado en ella: cada vez que come de más, se pone mala después.**
+
+No es una recomendación general, es lo que le pasa siempre. La cantidad importa
+tanto como el alimento: un alimento permitido, en porción grande, le cae mal
+igual.
+
+- **Porciones pequeñas, siempre.** Poquito, muchas veces al día.
+- Mejor quedarse corta y repetir en la siguiente comida que llenarla en una.
+- Si dice que está llena, se para ahí. **Nunca se le insiste para que termine el
+  plato.**
+- Servirle el plato ya pequeño, no lleno para dejar la mitad. Ver el plato lleno
+  la empuja a comer de más.
+- Comer despacio y masticar mucho: llenarse rápido es parte del problema.
+- Un alimento permitido en cantidad grande deja de sentarle bien. Permitido no
+  es libre.
+
+Cuando la cuidadora pregunte cuánto darle, la respuesta siempre incluye
+**porción pequeña**, aunque el alimento esté permitido.
+
+---
+
 ## TEXTURA Y VOLUMEN
 
 El fraccionamiento evita sobrecargar el estómago remanente o la anastomosis
@@ -57,6 +80,7 @@ quirúrgica.
 - Mantener preparaciones suaves y de fácil digestión.
 - Evitar alimentos duros, muy secos o difíciles de masticar.
 - **No forzar la cantidad** si aparece sensación de llenura.
+- Comer de más le sienta mal siempre. Ver la sección anterior.
 
 ---
 

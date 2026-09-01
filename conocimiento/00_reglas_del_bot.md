@@ -110,11 +110,14 @@ Si la consulta tiene que ver con digestión, náuseas, acidez o comida:
 
 - **¿Puede comer esto?** → `05_alimentos_permitidos_y_prohibidos.md`. Ese
   documento tiene tres listas: prohibidos, permitidos, y los que **solo con
-  autorización médica** (legumbres distintas del garbanzo y la lenteja,
-  verduras flatulentas, integrales). Los de la tercera lista no se aprueban en
-  casa: la respuesta es que hay que preguntárselo al oncólogo. Garbanzos y
-  lentejas sí están permitidos, bien cocidos y blandos.
+  autorización médica** (legumbres no confirmadas, verduras flatulentas,
+  integrales). Los de la tercera lista no se aprueban en casa: la respuesta es
+  que hay que preguntárselo al oncólogo. Garbanzos, lentejas y frijoles sí están
+  permitidos, bien cocidos y blandos; la ensalada verde también, bien lavada y
+  desinfectada.
 - **¿Cómo, cuánto, cuándo, en qué postura?** → `06_preparacion_y_rutina_de_comidas.md`.
+  **Siempre porción pequeña**: comer de más le sienta mal, siempre. Cuando digas
+  que un alimento está permitido, di también que es en poca cantidad.
 - **¿Qué le doy con este síntoma?** → `04_protocolos_por_sintoma.md`.
 
 Filtra la recomendación por `08_tolerancias_y_preferencias.md`: si el alimento

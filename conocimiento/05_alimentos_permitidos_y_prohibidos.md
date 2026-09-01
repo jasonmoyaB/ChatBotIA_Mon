@@ -64,6 +64,11 @@ siente bien: eso se comprueba y se anota en `08_tolerancias_y_preferencias.md`.
 Antes de proponer algo de esta lista hay que mirar si en `08` figura como mal
 tolerado.
 
+> **La cantidad manda tanto como el alimento.** Todo lo de esta lista va en
+> **porción pequeña**. Está comprobado que cuando ella come de más, sin respetar
+> las porciones, se pone mala después. Un permitido en plato grande le cae mal
+> igual. Cómo repartir el día está en `06_preparacion_y_rutina_de_comidas.md`.
+
 ### Proteínas magras, bien cocidas
 
 - Pechuga de pollo.
@@ -84,6 +89,24 @@ tolerado.
 - Papa.
 - Camote.
 
+### Ensalada verde cruda
+
+- **Ensalada verde normal (lechuga y hoja verde), como la come siempre.**
+
+Ella la come habitualmente y le sienta bien. Permitida.
+
+Condiciones que no se saltan:
+
+- **Lavada y desinfectada a fondo** antes de servirla. Es lo más importante:
+  durante la quimioterapia las defensas bajan y la verdura cruda mal lavada es
+  vía de infección (`06_preparacion_y_rutina_de_comidas.md`, Higiene).
+- Sin cebolla cruda, sin ajo crudo, sin vinagre, sin picante ni aderezos
+  procesados: siguen prohibidos aunque vayan en la ensalada.
+- Aliño simple: un poco de aceite y sal moderada (toma Enalapril).
+- Porción pequeña, bien masticada.
+- Si el oncólogo le avisa de **defensas bajas o neutropenia**, se suspende la
+  verdura cruda hasta que él diga. Ahí manda el médico.
+
 ### Frutas no ácidas, preferiblemente cocidas o en compota
 
 - Manzana.
@@ -102,10 +125,11 @@ tolerado.
 
 - **Garbanzos bien cocidos, blandos.**
 - **Lentejas bien cocidas, blandas.**
+- **Frijoles bien cocidos, blandos.**
 
-Son las dos únicas legumbres confirmadas. Ella las ha comido muchas veces y le
-sientan bien: la tolerancia está comprobada en la práctica, no supuesta. El
-resto de legumbres sigue en la lista de "solo con autorización médica".
+Son las tres legumbres confirmadas. Ella las ha comido siempre y le sientan
+bien: la tolerancia está comprobada en la práctica, no supuesta. El resto de
+legumbres sigue en la lista de "solo con autorización médica".
 
 Cómo se las dan:
 
@@ -138,12 +162,13 @@ gastrectomizada y bajo quimioterapia dependen de la fase postoperatoria y de su
 tolerancia real. **El asistente no los aprueba.** Mientras no exista indicación
 del oncólogo o del equipo tratante, la respuesta es que todavía no.
 
-### Legumbres distintas del garbanzo y la lenteja (frijoles, alubias, arvejas, habas)
+### Legumbres no confirmadas (alubias, arvejas, habas, soya)
 
 **Respuesta por defecto: todavía no. Hay que preguntárselo al oncólogo.**
 
-Garbanzos y lentejas son la excepción: están permitidos, con la preparación
-descrita arriba. Que ella los tolere **no autoriza** las demás legumbres.
+Garbanzos, lentejas y frijoles son la excepción: están permitidos, con la
+preparación descrita arriba. Que ella los tolere **no autoriza** las demás
+legumbres.
 
 Por qué no se decide en casa:
 
@@ -180,7 +205,7 @@ queda registrado y el asistente deja de proponerla.
 
 ### El resto de esta lista
 
-- Legumbres distintas del garbanzo y la lenteja, incluso trituradas.
+- Legumbres fuera de las tres confirmadas, incluso trituradas.
 - Verduras flatulentas o muy fibrosas: brócoli, coliflor, repollo, alcachofa,
   espárrago, puerro.
 - Cereales integrales y salvado.

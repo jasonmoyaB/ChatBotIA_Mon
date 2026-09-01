@@ -12,16 +12,20 @@ Lo usa la persona que cuida a mamá, desde el móvil, abriendo un enlace.
 ## Cómo funciona
 
 Los documentos médicos se **congelan en tiempo de compilación** y se inyectan
-**completos** en cada petición al modelo. No hay recuperación vectorial: el corpus
-entero son unos 6.000 tokens, cabe de sobra en el contexto, y trocearlo
-introduciría el riesgo de que el fragmento que importa no se recupere.
+**completos** en cada petición al modelo. No hay recuperación vectorial: los nueve
+documentos suman ~28.000 tokens, caben de sobra en el millón de contexto, y
+trocearlos introduciría el riesgo de que el fragmento que importa no se recupere.
 
-Ese riesgo no es teórico. Los dos documentos más críticos son los dos más
-pequeños: `01_protocolo_emergencias.md` (523 B) y
-`02_medicamentos_no_autorizados.md` (385 B). Ante *"tengo fiebre y muchas
-náuseas"*, una búsqueda vectorial recuperaría los documentos densos sobre náuseas
-y podría dejar fuera el protocolo de emergencias. El bot ofrecería un antiemético
-en vez de mandar a urgencias.
+Ese riesgo no es teórico. Los dos documentos más críticos siguen siendo los dos
+más pequeños: `02_medicamentos_no_autorizados.md` (385 B) y
+`01_protocolo_emergencias.md` (2,6 kB), frente a los 19 kB de
+`04_protocolos_por_sintoma.md`. Ante *"tiene fiebre y muchas náuseas"*, una
+búsqueda vectorial recuperaría los documentos densos sobre náuseas y podría dejar
+fuera el protocolo de emergencias. El bot ofrecería un antiemético en vez de
+mandar a urgencias.
+
+Cuanto más crece el corpus, más cierto es: la lista de bloqueo no ha crecido nada
+y compite por el ranking contra archivos cincuenta veces mayores.
 
 ```
 Cuidadora (móvil, PWA)
@@ -259,10 +263,23 @@ correctamente — solo es menos útil de lo que podría.
 
 ### Coste
 
-Con `claude-sonnet-5` ($3 entrada / $15 salida por millón de tokens, lectura de
-caché ~$0,30): corpus de ~6k tokens, respuestas de 400–600. Del orden de **1–2 ¢
-por mensaje** sin caché caliente, **~0,7 ¢** con él. Uso realista de una
-cuidadora: **3–6 USD/mes**.
+Medido, no estimado: el bloque `system` son **27.855 tokens** (`pnpm probar:api`
+lo imprime). Con `claude-sonnet-5` a $3 entrada / $15 salida por millón:
+
+| Concepto | Precio | Por mensaje |
+|---|---|---|
+| Escritura de caché (1,25×) | $3,75 / M | **~10 ¢** — solo el primer mensaje |
+| Lectura de caché (0,1×) | $0,30 / M | **~0,8 ¢** |
+| Salida (300–600 tokens) | $15 / M | ~0,5–0,9 ¢ |
+
+El caché dura 5 minutos. Una conversación seguida paga una escritura y el resto
+lecturas; volver dos horas después vuelve a pagarla. Con un uso realista —unas 30
+conversaciones al mes, tres o cuatro mensajes cada una— salen **4–5 USD/mes**, y
+la mayor parte es escritura de caché, no conversación.
+
+Si el corpus sigue creciendo, el próximo ajuste es `ttl: "1h"` en el
+`cache_control` de `lib/prompt.ts`: la escritura pasa a 2× en vez de 1,25×, pero
+dura doce veces más. Para un uso a ratos sale a cuenta.
 
 ---
 
