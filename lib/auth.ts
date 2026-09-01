@@ -9,17 +9,12 @@
  * Se usa Web Crypto (no `node:crypto`) porque el proxy corre en el runtime
  * Edge, donde `node:crypto` no existe.
  */
+import { leerSecreto } from "./configuracion";
 
 export const COOKIE_SESION = "sesion";
 export const DURACION_SESION_S = 60 * 60 * 24 * 365; // 1 año
 
 const codificador = new TextEncoder();
-
-function requerir(nombre: string): string {
-  const valor = process.env[nombre];
-  if (!valor) throw new Error(`Falta la variable de entorno ${nombre}`);
-  return valor;
-}
 
 /**
  * Comparacion en tiempo constante.
@@ -40,7 +35,7 @@ function igualesEnTiempoConstante(a: string, b: string): boolean {
 async function clave(): Promise<CryptoKey> {
   return crypto.subtle.importKey(
     "raw",
-    codificador.encode(requerir("SECRETO_COOKIE")),
+    codificador.encode(leerSecreto("SECRETO_COOKIE")),
     { name: "HMAC", hash: "SHA-256" },
     false,
     ["sign"],
@@ -55,7 +50,7 @@ function aBase64Url(bytes: ArrayBuffer): string {
 /** `true` si el token del link magico es el correcto. */
 export function claveDeAccesoValida(entregada: string | null): boolean {
   if (!entregada) return false;
-  return igualesEnTiempoConstante(entregada, requerir("CLAVE_ACCESO"));
+  return igualesEnTiempoConstante(entregada, leerSecreto("CLAVE_ACCESO"));
 }
 
 /**

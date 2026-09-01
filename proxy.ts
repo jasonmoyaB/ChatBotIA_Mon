@@ -7,7 +7,9 @@ import {
   firmarSesion,
   sesionValida,
 } from "@/lib/auth";
+import { secretosDePuertaQueFaltan } from "@/lib/configuracion";
 import { NO_AUTORIZADO } from "@/lib/mensajes";
+import { registrar } from "@/lib/registro";
 
 function redirigirSinToken(peticion: NextRequest): NextResponse {
   const limpia = new URL(peticion.nextUrl);
@@ -62,6 +64,18 @@ function rechazar(esApi: boolean): NextResponse {
  * abierta en silencio.
  */
 export async function proxy(peticion: NextRequest) {
+  const esApi = peticion.nextUrl.pathname.startsWith("/api/");
+
+  // Un despliegue a medias no puede decidir nada, asi que cierra. Sin esto, la
+  // lectura de la variable lanzaba y el resultado era un 500 con traza, visible
+  // solo al abrir con `?k=`: la URL pelada seguia dando 401 y el sintoma real
+  // quedaba escondido detras de la query string.
+  const faltantes = secretosDePuertaQueFaltan();
+  if (faltantes.length > 0) {
+    registrar("configuracion_incompleta", { faltantes });
+    return rechazar(esApi);
+  }
+
   if (await sesionValida(peticion.cookies.get(COOKIE_SESION)?.value)) {
     if (peticion.nextUrl.searchParams.has("k")) {
       return redirigirSinToken(peticion);
@@ -73,7 +87,7 @@ export async function proxy(peticion: NextRequest) {
     return canjearToken(peticion);
   }
 
-  return rechazar(peticion.nextUrl.pathname.startsWith("/api/"));
+  return rechazar(esApi);
 }
 
 const PAGINA_NO_DISPONIBLE = `<!doctype html>
