@@ -129,43 +129,110 @@ Sus horarios reales y las cantidades que de verdad tolera se anotan en
 
 ---
 
-## EJEMPLO DE MENÚ DIARIO
+## MENÚS DE EJEMPLO PARA UNA SEMANA
 
-Es **un ejemplo**, no una obligación ni una prescripción. Todos sus alimentos
-salen de la lista de permitidos de `05`. Antes de proponerlo hay que comprobar en
-`08` que no haya nada mal tolerado.
+Son **ejemplos**, no una obligación ni una prescripción. Cada alimento sale de la
+lista de permitidos de `05`; no hay ninguno que no esté ahí. Si la cuidadora
+pide un menú, el asistente propone uno de estos o lo arma con la tabla de
+intercambios, nunca con alimentos de fuera de `05`.
 
-**Desayuno**
+Reglas que valen para todos los días:
 
-- Avena bien cocida.
-- Papaya madura, en pequeña cantidad.
-- Infusión de manzanilla tibia.
+- **Todo en porción pequeña.** Es la regla que más pesa (ver arriba).
+- Antes de proponer un día, comprobar en `08` que no tenga nada mal tolerado.
+  Si lo tiene, cambiarlo por otro de la misma fila de intercambios.
+- Los días de quimioterapia, `07` manda sobre estos menús.
+- La merienda nocturna solo si hace falta.
+- Bebida en todas las comidas: agua a temperatura ambiente o manzanilla tibia,
+  a sorbos pequeños.
+- Fruta preferiblemente cocida o en compota casera, sin azúcar añadida.
 
-**Media mañana**
+### Intercambios: si no quiere algo, se cambia por otro de la misma fila
 
-- Compota casera de manzana o pera, sin azúcar añadida.
+| Grupo | Opciones permitidas en `05` |
+|---|---|
+| Proteína | Pechuga de pollo, pavo, pescado blanco (merluza, lenguado), huevo duro, huevo escalfado bien cocido, tortilla sin grasa |
+| Legumbre (cuenta como proteína) | Garbanzos, lentejas o frijoles, bien cocidos y blandos; en puré si da gas |
+| Verdura cocida | Zanahoria, calabaza, calabacín, papa, camote |
+| Cereal | Arroz blanco, avena bien cocida, pasta corta, pan blanco tostado |
+| Fruta | Manzana, pera, plátano maduro, papaya |
+| Plato de cuchara | Caldo magro clarificado, crema casera de verduras sin lácteos |
+| Crudo | Ensalada verde lavada y desinfectada, aliño de poco aceite y sal moderada |
 
-**Almuerzo**
+### Día 1
 
-- Pechuga de pollo hervida, al vapor o a la plancha sin grasa.
-- Arroz blanco.
-- Zanahoria y calabacín bien cocidos.
+- **Desayuno:** avena bien cocida y papaya madura.
+- **Media mañana:** compota de manzana.
+- **Almuerzo:** pechuga de pollo al vapor, arroz blanco, zanahoria y calabacín cocidos.
+- **Media tarde:** pan blanco tostado y plátano maduro.
+- **Cena:** pescado blanco al horno, puré de camote, crema de calabaza.
+- **Nocturna:** compota de pera.
 
-**Media tarde**
+### Día 2
 
-- Pan blanco tostado.
-- Pequeña porción de plátano maduro.
+- **Desayuno:** huevo duro y pan blanco tostado.
+- **Media mañana:** pera cocida.
+- **Almuerzo:** puré de lentejas, arroz blanco, ensalada verde.
+- **Media tarde:** avena bien cocida con plátano maduro.
+- **Cena:** pavo a la plancha sin grasa, puré de papa, calabacín cocido.
+- **Nocturna:** compota de manzana.
 
-**Cena**
+### Día 3
 
-- Pescado blanco bien cocido.
-- Puré de papa o camote.
-- Crema casera de calabaza, sin lácteos.
+- **Desayuno:** avena bien cocida con compota de pera.
+- **Media mañana:** plátano maduro.
+- **Almuerzo:** merluza al vapor, papa hervida, zanahoria cocida.
+- **Media tarde:** pan blanco tostado y papaya madura.
+- **Cena:** caldo magro clarificado con pasta corta y pollo deshebrado.
+- **Nocturna:** manzana cocida.
 
-**Merienda nocturna**
+### Día 4
 
-- Compota de pera o manzana.
-- Agua a temperatura ambiente.
+- **Desayuno:** tortilla sin grasa y pan blanco tostado.
+- **Media mañana:** compota de manzana.
+- **Almuerzo:** pechuga de pollo hervida, pasta corta, calabaza cocida.
+- **Media tarde:** avena bien cocida.
+- **Cena:** puré de frijoles, arroz blanco, crema de zanahoria.
+- **Nocturna:** pera cocida.
+
+### Día 5
+
+- **Desayuno:** avena bien cocida y plátano maduro.
+- **Media mañana:** papaya madura.
+- **Almuerzo:** lenguado al horno, puré de camote, ensalada verde.
+- **Media tarde:** pan blanco tostado con huevo duro.
+- **Cena:** crema de calabacín, pavo hervido, arroz blanco.
+- **Nocturna:** compota de pera.
+
+### Día 6
+
+- **Desayuno:** huevo escalfado bien cocido y pan blanco tostado.
+- **Media mañana:** manzana cocida.
+- **Almuerzo:** puré de garbanzos, arroz blanco, zanahoria cocida.
+- **Media tarde:** avena bien cocida con papaya.
+- **Cena:** pechuga de pollo al horno, papa hervida, calabacín cocido.
+- **Nocturna:** plátano maduro.
+
+### Día 7
+
+- **Desayuno:** avena bien cocida con compota de manzana.
+- **Media mañana:** pera cocida.
+- **Almuerzo:** merluza al vapor, pasta corta, crema de calabaza.
+- **Media tarde:** pan blanco tostado y plátano maduro.
+- **Cena:** caldo magro clarificado, tortilla sin grasa, puré de papa.
+- **Nocturna:** compota de pera.
+
+### Lista de compras de la semana
+
+Todo sale de `05`. Nada de embutidos, lácteos enteros, café, refrescos ni
+salsas procesadas (prohibidos en `05`).
+
+- Pechuga de pollo, pavo, merluza, lenguado, huevos.
+- Garbanzos, lentejas, frijoles.
+- Zanahoria, calabaza, calabacín, papa, camote, lechuga u hoja verde.
+- Manzana, pera, plátano maduro, papaya.
+- Arroz blanco, avena, pasta corta, pan blanco.
+- Manzanilla, aceite (poco), sal (moderada: toma Enalapril).
 
 ---
 

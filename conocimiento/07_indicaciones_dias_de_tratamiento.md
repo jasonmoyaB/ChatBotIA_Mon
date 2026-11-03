@@ -28,11 +28,18 @@ protocolo de alarma de `01_protocolo_emergencias.md`.
 
 ## ESQUEMA DE TRATAMIENTO
 
-- Diagnóstico o cirugía previa: `[Por completar]`
+- Diagnóstico: cáncer gástrico.
+- Cirugía previa: gastrectomía subtotal. Le dejaron aproximadamente el 20 % del
+  estómago. Tipo de reconstrucción: `[Por completar]`
 - Nombre del esquema de quimioterapia: `[Por completar]`
 - Duración de cada ciclo (cada cuántos días): `[Por completar]`
 - Número total de ciclos previstos: `[Por completar]`
-- Fecha de inicio del tratamiento: `[Por completar]`
+- Fecha de inicio del tratamiento: hace unos 2 años (alrededor de noviembre de
+  2024). Fecha exacta: `[Por completar]`
+
+> Fuente de diagnóstico, cirugía y tiempo en quimioterapia: la familia,
+> noviembre de 2026. Son datos de contexto: no cambian ninguna dosis, alimento
+> ni señal de alarma de los demás documentos.
 - Hospital o centro donde recibe las sesiones: `[Por completar]`
 - Vía de administración (intravenosa, oral, mixta): `[Por completar]`
 
