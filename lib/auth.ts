@@ -54,6 +54,18 @@ export function claveDeAccesoValida(entregada: string | null): boolean {
 }
 
 /**
+ * `true` si la clave de la URL del conector MCP es la correcta.
+ *
+ * Clave aparte de `CLAVE_ACCESO`: esta URL queda guardada en ChatGPT/Claude, y
+ * rotarla no puede dejar fuera a la cuidadora. Sin la variable, cerrado.
+ */
+export function claveMcpValida(entregada: string | null): boolean {
+  const esperada = process.env.CLAVE_MCP;
+  if (!entregada || !esperada) return false;
+  return igualesEnTiempoConstante(entregada, esperada);
+}
+
+/**
  * Genera el valor de la cookie: `<emitidaEn>.<hmac>`.
  *
  * Lleva la marca de tiempo dentro de la firma para que la sesion pueda caducar

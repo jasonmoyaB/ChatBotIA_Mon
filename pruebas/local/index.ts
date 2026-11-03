@@ -10,6 +10,7 @@
 import { pruebasDelCorpus } from "./corpus";
 import { pruebasDelAlcance } from "./alcance";
 import { resumen } from "./ejecutor";
+import { pruebasDelMcp } from "./mcp";
 import { pruebasDePeticion } from "./peticion";
 import { pruebasDelProxy } from "./proxy";
 import { pruebasDeRespuestaAlarma, pruebasDelTriage } from "./triage";
@@ -20,5 +21,6 @@ await pruebasDelAlcance();
 pruebasDelCorpus();
 await pruebasDePeticion();
 await pruebasDelProxy();
+await pruebasDelMcp();
 
 resumen();

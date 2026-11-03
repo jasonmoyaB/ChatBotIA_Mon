@@ -64,7 +64,7 @@ async function leerTextoLimitado(peticion: Request): Promise<string> {
   }
 }
 
-async function leerJsonLimitado(peticion: Request): Promise<unknown> {
+export async function leerJsonLimitado(peticion: Request): Promise<unknown> {
   const texto = await leerTextoLimitado(peticion);
   try {
     return JSON.parse(texto);

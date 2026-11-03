@@ -94,8 +94,8 @@ export async function proxy(peticion: NextRequest) {
 export const config = {
   // Todo menos los estaticos de Next y los iconos: el manifest y los iconos de
   // la PWA tienen que servirse sin sesion o el "Añadir a pantalla de inicio"
-  // se queda sin icono.
+  // se queda sin icono. `/api/mcp` lleva su propia clave en la ruta.
   matcher: [
-    "/((?!_next/static|_next/image|favicon.ico|robots.txt|manifest.json|icono-).*)",
+    "/((?!_next/static|_next/image|favicon.ico|robots.txt|manifest.json|icono-|api/mcp).*)",
   ],
 };
